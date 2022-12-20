@@ -1,1 +1,11 @@
+# PYTHON LESSONS
 
+### 1. Python Installation
+### 2. Getting started with Python
+### 3. Basic exercises (example exchanging variables without auxiliary variable)
+### 4. Data Access Exercises
+### 5. Regex with Python
+### 6. Hangman game using colorama
+### 7. Game connect 4
+### 8. Web scraping
+### 9. Create api and make calls
