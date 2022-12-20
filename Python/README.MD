@@ -2,7 +2,8 @@
 
 ### 1. Python Installation
 ### 2. Getting started with Python
-### 3. Basic exercises (example exchanging variables without auxiliary variable)
+### 3.1 Basic exercises (example exchanging variables without auxiliary variable)
+### 3.2 Advanced exercises (example: Rome cipher)
 ### 4. Data Access Exercises
 ### 5. Regex with Python
 ### 6. Hangman game using colorama
