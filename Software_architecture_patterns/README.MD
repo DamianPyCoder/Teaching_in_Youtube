@@ -11,3 +11,6 @@
 - [ ] 9. Blackboard pattern
 - [ ] 10. Interpreter pattern
 
+
+Pattern Listing Source:
+https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b
