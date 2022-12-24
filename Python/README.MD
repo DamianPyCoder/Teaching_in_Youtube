@@ -1,11 +1,7 @@
 # PYTHON LESSONS
 
-
-## 1. Python Installation
-
-##
-
-## 2. Getting started with Python
+## 1. Getting started 
+#### 1.1 - Python Installation
 
 ##
 
