@@ -22,7 +22,8 @@
 ## 6. Games
 #### 6.1 - Hangman using colorama
 #### 6.2 - Connect 4
-#### 6.3 - Chess using tkinter para el tablero
+#### 6.3 - Checkers
+#### 6.4 - Chess using tkinter para el tablero
    - Create the dashboard with Tkinter and Canvas
    - Create the pieces
    - Create game logic
