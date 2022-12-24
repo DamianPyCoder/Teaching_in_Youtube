@@ -12,9 +12,13 @@
 
 ## 5. Regex with Python
 
-## 6. Hangman game using colorama
+## 6. Games
 
-## 7. Game connect 4
+#### 6.1 Hangman using colorama
+
+#### 6.2 Connect 4
+
+#### 6.3 Shooter
 
 ## 8. Another game without defined
 
