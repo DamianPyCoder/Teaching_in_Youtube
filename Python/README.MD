@@ -26,10 +26,6 @@
 
 ##
 
-## 8. Another game without defined
-
-##
-
 ## 9. Create api and make calls
 
 ##
