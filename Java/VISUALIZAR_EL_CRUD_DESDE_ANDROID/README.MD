@@ -1,14 +1,12 @@
-PRACTICA 4
+PRACTICA 3
 
-Las aplicaciones en Android se pueden hacer con html/javascript o con 
-Android nativo. La ventaja de realizar una aplicación con html/javascript, es 
-que puede funcionar en un PC y en terminal Android. En cambio si se hace 
-en Android nativo (java/kotlin y xml) obviamente solo puede funcionar en 
-Android. Es por eso que los fabricantes de videojuegos se decantan por 
-plataformas hibridas (xamarin, unity) que producen salidas de su aplicación 
-en numerosos formatos.
-En esta practica se pide realizar el mismo CRUD de libros realizado en 
-practicas anteriores con SpringBoot y html, pero ahora con Android nativo 
-(Activity.java y main_activity.xml) usando la clase HttpURLConnection que 
-permite realizar llamadas HTTP a un servidor API Rest SpringBoot, como 
-hacen las aplicaciones bancarias actuales
+En esta practica solo se pide visualizar desde el navegador de un emulador 
+de Android, la pagina web realizada en la practica 2.
+Hemos visto que si visualizamos la aplicación desde el navegador del equipo 
+anfitrión, la IP donde encontramos el servicio es localhost:8080 o 
+127.0.0.1:8080.
+En el caso que nos pidan visualizar el CRUD realizado en Springboot desde 
+un emulador de Android, la llamada http a la aplicación se debe realizar 
+desde la IP 10.0.2.2:8080.
+Esta practica nos ayuda a montar el sistema de red que aplicaremos en las 
+siguientes Practicas de la UF2.
