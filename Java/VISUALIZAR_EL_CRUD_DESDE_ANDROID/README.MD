@@ -9,4 +9,4 @@ En el caso que nos pidan visualizar el CRUD realizado en Springboot desde
 un emulador de Android, la llamada http a la aplicación se debe realizar 
 desde la IP 10.0.2.2:8080.
 Esta practica nos ayuda a montar el sistema de red que aplicaremos en las 
-siguientes Practicas de la UF2.
+siguientes Practicas.
