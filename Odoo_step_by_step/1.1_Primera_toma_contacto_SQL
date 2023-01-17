@@ -1,0 +1,98 @@
+0. Para iniciar psql
+> sudo su postgres
+> p4ssword!
+> psql
+
+
+
+
+1. Crea una base de dades testdb i una taula llibres amb els següents camps:
+  titol varchar(40),
+  autor varchar(40),
+  editorial varchar(30),
+  preu float,
+  quantitat integer
+
+CREATE DATABASE testdb;
+
+CREATE TABLE llibres (
+  titol varchar(40),
+  autor varchar(40),
+  editorial varchar(30),
+  preu float,
+  quantitat integer   
+);
+
+
+
+
+2. Inserta els següents registres a la taula llibres
+titol | autor | editorial | preu | quantitat
+---------------------------------------------------------------
+Oliver Twist | Charles Dickens | Planeta | 15.3 | 200
+El señor de los anillos | J.R.R. Tolkien | Planeta | 30.1 | 200
+Harry Potter | J.K. Rowling | Alfaguara | 25.6 | 310
+Don Quijote | Miguel de Cervantes | Austral | 20.99 | 500
+
+INSERT INTO llibres (titol, autor, editorial, preu, quantitat) VALUES ('Oliver Twist', 'Charles Dickens', 'Planeta', 15.3, 200);
+
+INSERT INTO llibres (titol, autor, editorial, preu, quantitat) VALUES 
+('El señor de los anillos', 'J.R.R. Tolkien', 'Planeta', 30.1, 200), 
+('Harry Potter', 'J.K. Rowling', 'Alfaguara', 25.6, 310), 
+('Don Quijote', 'Miguel de Cervantes', 'Austral', 20.99, 500);
+
+
+
+
+3. Selecciona els llibres amb preu més gran de 20 € 
+
+SELECT * FROM llibres WHERE preu>20;
+
+
+
+
+4. Selecciona els llibres amb preu més petit de 30 € ordenats per autor
+
+SELECT * FROM llibres WHERE preu<30 order by autor;
+
+
+
+
+5. Fes servir la funció count per contar els registres amb quantitat igual a 200
+
+SELECT COUNT(*) FROM llibres WHERE quantitat=200;
+
+
+
+
+6. Actualitza el preu del llibre Don Quijote al valor 18.5
+
+
+
+
+
+
+7. Esborra els llibres de l’editorial Planeta
+ 
+
+
+
+
+
+8. Esborra tots els registres de la taula llibres
+
+
+
+
+
+
+
+9. Esborra la  taula llibres i la base de dades testdb
+
+
+
+
+
+
+
+
