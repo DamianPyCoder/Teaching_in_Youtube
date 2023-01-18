@@ -5,9 +5,13 @@
 
 ##
 
-## 3. Exercices
-#### 3.1 - Basic exercises (example exchanging variables without auxiliary variable)
-#### 3.2 - Advanced exercises (example: Rome cipher)
+## 2. Exercices
+#### 2.1 - Basic exercises (example exchanging variables without auxiliary variable)
+#### 2.2 - Advanced exercises (example: Rome cipher)
+
+##
+
+## 3. SQLITE
 
 ##
 
