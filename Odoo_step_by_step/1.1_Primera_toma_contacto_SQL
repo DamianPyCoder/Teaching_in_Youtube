@@ -67,13 +67,14 @@ SELECT COUNT(*) FROM llibres WHERE quantitat=200;
 
 6. Actualitza el preu del llibre Don Quijote al valor 18.5
 
-
+UPDATE llibres SET preu=18.6 WHERE titol='Don Quijote';
 
 
 
 
 7. Esborra els llibres de l’editorial Planeta
  
+DELETE FROM llibres WHERE editorial='Planeta';
 
 
 
@@ -81,7 +82,7 @@ SELECT COUNT(*) FROM llibres WHERE quantitat=200;
 
 8. Esborra tots els registres de la taula llibres
 
-
+DELETE FROM llibres;
 
 
 
@@ -89,8 +90,8 @@ SELECT COUNT(*) FROM llibres WHERE quantitat=200;
 
 9. Esborra la  taula llibres i la base de dades testdb
 
-
-
+DROP TABLE IF EXISTS llibres;
+DROP DATABASE IF EXISTS testdb;
 
 
 
