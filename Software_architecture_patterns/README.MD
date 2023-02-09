@@ -1,15 +1,37 @@
 ## PATTERNS
 
-- [ ] 1. Layered pattern
-- [ ] 2. Client-server pattern
-- [ ] 3. Master-slave pattern
-- [ ] 4. Pipeline Filter Pattern
-- [ ] 5. Broker pattern
-- [ ] 6. Peer-to-peer pattern
-- [ ] 7. Event bus pattern
-- [x] 8. Model-view-controller
-- [ ] 9. Blackboard pattern
-- [ ] 10. Interpreter pattern
+- [ ] 1. LAYERED PATTERN
+
+
+- [ ] 2. CLIENT-SERVER PATTERN
+
+
+- [ ] 3. MASTER-SLAVE PATTERN
+
+
+- [ ] 4. PIPELINE FILTER PATTERN
+
+
+- [ ] 5. BROKER PATTERN
+
+
+- [ ] 6. PEER-TO-PEER PATTERN
+
+
+- [ ] 7. EVENT BUS PATTERN
+
+
+- [x] 8. MODEL-VIEW-CONTROLLER -> Explained with a CRUD in C#
+
+
+- [ ] 9. BLACKBOARD PATTERN
+
+
+- [ ] 10. INTERPRETER PATTERN
+
+
+- [x] 11. ABSTRACT FACTORY -> Notes app in python that supports different databases
+
 
 
 Pattern Listing Source:
