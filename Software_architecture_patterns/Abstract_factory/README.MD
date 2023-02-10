@@ -1,1 +1,1 @@
-
+One of those professors who has made me fall in love with the world of programming is Xavi Quesada, he started this project as a class exercise and I have decided to continue it by adding new databases compatible with the app, a future more attractive interface and new functionalities
