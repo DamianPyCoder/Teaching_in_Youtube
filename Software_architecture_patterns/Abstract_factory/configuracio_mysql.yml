@@ -1,0 +1,8 @@
+# configuracio.yml
+# Exemple per a mySql
+base de dades:
+    motor: mysql
+    host: localhost
+    user: xavi
+    password: '1234'
+    base_dades: llista_compra_m06

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/html/favicon.png">
+    <title>Llista Compra. Login</title>
+    <style>
+        h1, h2{
+            text-align: center;
+        }
+        .toast{
+            visibility: hidden;
+        }
+        .show{
+            position: relative;
+            top: -70px;
+            left: 0px;
+            visibility: visible;
+            background-color: yellow;
+            color: red;
+            animation-name: "show-toast";
+            animation-duration: 4s;
+        }
+        @keyframes show-toast {
+            0%   {width: 40%; }
+            50%  {width: 100%; }
+            75%  {width: 100%; }
+            100% {width: 40%}
+        }
+    </style>
+    <script>
+        var txt_error;
+        function login(){
+
+            txt_error = document.getElementById("txt_error");
+            var nom_usuari = document.getElementById("txt_usuari").value;
+            var password = document.getElementById("txt_password").value;
+            fetch(
+                "http://localhost:5000/login/" + nom_usuari + "/" + password
+                ).then(
+                    response => procesa_resposta_login(response)
+                ).then(
+                    dades => get_la_meva_api_key(dades)
+                );
+        }
+
+        function procesa_resposta_login(resposta){
+            if (resposta.ok){
+                api_key = resposta.headers.get('X-API-KEY');
+                console.log("api-key (header): " + api_key);
+                localStorage.setItem('api-key', api_key)
+            }            
+            return resposta.json();
+        }
+        function get_la_meva_api_key(dades_json){
+            if(dades_json.estatus == 200){
+                console.log("api-key (body): " + dades_json.api_key);
+                window.location = "/restricted/llista.html";
+            }else{
+                txt_error.className = "show";
+                setTimeout(function(){ txt_error.className = "toast"; }, 4000);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Benvinguts a la vostra llista de la compra</h1> 
+    <h2>Login</h2>
+    <div id="main" >
+        <label for="usuari">Nom usuari:</label>
+        <input type="text" name="usuari" id="txt_usuari" /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="txt_password" /><br />
+        <input type="button" onclick="login()" value="Login"/>
+    </div> 
+    <div id="txt_error" class="toast">
+        <h2>Usuari o paraula de pas no vàlids :(</h2>
+    </div>
+</body>
+</html>

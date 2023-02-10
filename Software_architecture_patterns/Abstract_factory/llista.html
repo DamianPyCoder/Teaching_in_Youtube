@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/html/favicon.png">
+    <title>[X] Llista Compra. Vista principal</title>
+    <style>
+        h1, h2{
+            text-align: center;
+        }
+        #main{
+            background-color: whitesmoke;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .cat_colum{
+            text-align: right;
+            background-color: PowderBlue;
+            color: white;
+            padding-left: 10px;
+        }
+        .prod_colum{
+            text-align: left;
+            background-color: PowderBlue;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function get_llista(){
+            contenidor = document.getElementById("main");
+            contenidor.innerHTML = "";
+            fetch("/llista", {
+                method: 'GET',
+                headers: new Headers({'X-API-KEY': localStorage.getItem('api-key')})
+            }).then(
+                    function (response){
+                        if (response.ok){
+                            return response.json();
+                        }else{
+                            window.location = "/html/login.html";
+                            return null;
+                        }
+                    }
+                ).then(
+                    dades => dades != null ? tracta_dades_llista(dades) : null
+                );
+        }
+
+        function tracta_dades_llista(dades_json){
+            contenidor = document.getElementById("main");
+            taula = document.createElement('table');
+            titols = document.createElement('tr');
+            titol_qty = document.createElement('th');
+            titol_qty.appendChild(document.createTextNode("Qty"));
+            titol_article = document.createElement('th');
+            titol_article.appendChild(document.createTextNode("Article"));
+            titol_categoria = document.createElement('th');
+            titol_categoria.appendChild(document.createTextNode("Categoria"));
+            titols.appendChild(titol_qty);
+            titols.appendChild(titol_article);
+            titols.appendChild(titol_categoria);
+            contenidor.appendChild(titols);
+            dades_json.forEach(element => {
+                files = document.createElement('tr');
+                fila_qty = document.createElement('td');
+                fila_qty.appendChild(document.createTextNode(element.qty));
+                fila_article = document.createElement('td');
+                fila_article.appendChild(document.createTextNode(element.article.nom));
+                fila_article.setAttribute('class', 'prod_colum');
+                fila_categoria = document.createElement('td');
+                fila_categoria.appendChild(document.createTextNode(element.article.categoria));
+                fila_categoria.setAttribute('class', 'cat_colum');
+                fila_categoria.setAttribute('onclick', "show_only('" + element.article.categoria + "')");
+                files.appendChild(fila_qty);
+                files.appendChild(fila_article);
+                files.appendChild(fila_categoria);
+                contenidor.appendChild(files);
+            });
+
+        }
+
+        function show_only(categoria){
+            window.alert("Show only " + categoria);
+        }
+    </script>
+</head>
+<body onload="get_llista()">
+    <h1>Benvinguts a la vostra llista de la compra</h1>
+    <h2>(Pàgina principal)</h2> 
+    <div id="main" >
+        
+    </div>
+</body>
+</html>

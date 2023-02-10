@@ -1,0 +1,5 @@
+# configuracio.yml
+# Exemple per a mySql
+base de dades:
+    motor: sqlite
+    ruta: base_de_dades.db
