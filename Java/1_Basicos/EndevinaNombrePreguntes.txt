@@ -1,0 +1,28 @@
+A quina línia es declara la variable numero?
+en la linea 13
+
+---
+
+A quina línia s’inicialitza la variable numero?
+en la linea 21
+
+---
+
+Si el valor pensat és 10, amb quin valor s’inicialitza la variable numero?
+30, ya que la primera vez que utiliza el programa dicha variable lo que hace es multiplicarla por tres en la linea 21
+numero = numeroPensat * 3;
+
+---
+
+La variable numero va canviant de valor durant el programa. Ets capaç d’indicar els diferents valors que va rebent dins del programa quan el numeroPensat és 10? Afegeix la línia en la que pren cada valor.
+en la linea 21, multiplica la variable numeroPensat por tres dando lugar a un 30
+numero = numeroPensat * 3;
+
+en la linea 26, suma seis al valor de la variable dando 36 como nuevo valor
+numero = numero + 6;
+
+en la linea 31, divide entre tres el valor dando como resultado 12
+numero = numero / 3;
+
+en la linea 36, resta el valor de la variable numeroPensat que es 10 sobre Numero que es 12, dando como nuevo valor de la variable numero 2
+numero = numero - numeroPensat;
