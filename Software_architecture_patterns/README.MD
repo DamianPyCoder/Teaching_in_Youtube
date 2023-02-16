@@ -21,7 +21,7 @@
 - [ ] 7. EVENT BUS PATTERN
 
 
-- [x] 8. MODEL-VIEW-CONTROLLER -> Explained with a CRUD in C#
+- [x] 8. MODEL-VIEW-CONTROLLER 
 
 
 - [ ] 9. BLACKBOARD PATTERN
@@ -30,8 +30,21 @@
 - [ ] 10. INTERPRETER PATTERN
 
 
-- [x] 11. ABSTRACT FACTORY -> Notes app in python that supports different databases
+- [x] 11. ABSTRACT FACTORY   
 
+  
+<br>
+<br>
+
+## EXPLAINED HOW I DID
+
+| MODEL-VIEW-CONTROLLER  | CRUD with NET and Entity Framework in C#  |
+| ------------- | ------------- | 
+| ABSTRACT FACTORY  | Notes app in python that supports different databases  | 
+
+
+<br>
+<br>
 
 
 Pattern Listing Source:
